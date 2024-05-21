@@ -1359,3 +1359,28 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+/* New Gallery */
+.metro-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.metro-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.metro-gallery .gallery-item {
+  flex: 1 1 calc(33.333% - 10px);
+}
+@media (max-width: 768px) {
+  .metro-gallery .gallery-item {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+@media (max-width: 576px) {
+  .metro-gallery .gallery-item {
+    flex: 1 1 100%;
+  }
+}
